@@ -1,39 +1,21 @@
-Source: droidian-archive-keyring
-Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Source: furios-archive-keyring
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
 Section: misc
 Priority: optional
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.5.0.3
-Vcs-Browser: https://github.com/droidian/droidian-archive-keyring
-Vcs-Git: https://github.com/droidian/droidian-archive-keyring.git
+Vcs-Browser: https://github.com/furilabs/furios-archive-keyring
+Vcs-Git: https://github.com/furilabs/furios-archive-keyring.git
 
-Package: droidian-archive-keyring
+Package: furios-archive-keyring
 Architecture: all
 Pre-Depends: apt
 Depends: ${misc:Depends}
-Breaks: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
-Replaces: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
-Description: Archive keyring for Droidian repositories
- This package contains the archive keyring for Droidian
+Description: Archive keyring for FuriOS repositories
+ This package contains the archive keyring for FuriOS
  repositories.
 
-Package: cutie-archive-keyring
-Architecture: all
-Pre-Depends: apt
-Depends: ${misc:Depends}
-Description: Archive keyring for Cutie Shell repositories
- This package contains the archive keyring for Cutie Shell
- repositories.
-
-Package: debian-pm-archive-keyring
-Architecture: all
-Pre-Depends: apt
-Depends: ${misc:Depends}
-Description: Archive keyring for debian-pm repositories
- This package contains the archive keyring for debian-pm
- repositories.
-
-Package: mobian-droidian-archive-keyring
+Package: mobian-furios-archive-keyring
 Architecture: all
 Pre-Depends: apt
 Depends: ${misc:Depends}
@@ -43,13 +25,5 @@ Description: Archive keyring for mobian repositories
  This package contains the archive keyring for mobian
  repositories.
  .
- On Droidian systems, you should use this package in place
+ On FuriOS systems, you should use this package in place
  of the Mobian equivalent.
-
-Package: hybris-mobian-archive-keyring
-Architecture: all
-Pre-Depends: apt
-Depends: droidian-archive-keyring
-Description: Archive keyring for Droidian repositories -- transitional package
- This package is a transitional package. Feel free to
- remove it.
